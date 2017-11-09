@@ -1,0 +1,76 @@
+body{
+    background-color: #cac6ce;
+    text-align: center;
+}
+#wrapper{
+    position:relative;
+    margin-top: 50px;
+}
+#loginContainer{
+    width:310px;
+    margin-top: 0;
+    padding: 30px 25px;
+    background-color: #fff;
+    border:1px solid #000;
+    border-radius: 5;
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+}
+input[type=text],[type=email],[type=password] {
+    padding: 5px;
+    width: 100%;
+    height:40px;
+    margin-top: 10px;
+    font-size:18px;
+}
+input[type=submit]{
+    background:linear-gradient(to bottom, #22abe9 5%, #36caf0 100%);
+    border: 1px solid #0F799E;
+    color:#fff;
+    width:320px;
+    height:40px;
+    margin-top: 15px;
+    box-shadow:inset 01px 0 0 #22abe9;
+    font-size: 18px;
+    font-weight:700;
+    text-shadow: 0 1px 0 #13506D;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background: linear-gradient(to bottom, #36caf0 5%, #22abe9 100%);
+}
+a{
+    text-decoration: none;
+    color:#6495ed;
+}
+#signupContainer{
+    width:310px;
+    margin-top: 0;
+    padding: 30px 25px;
+    background-color: #fff;
+    border:1px solid #000;
+    border-radius: 5;
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+    display: none;
+}
+input:required:invalid,input:focus:invalid{
+    background-image: url('images/invalid.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+input:required:valid{
+    background-image: url('images/valid.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.error_message{
+    font-weight: bold;
+    color:red;
+}
+.success_message{
+    font-weight: bold;
+    color:green;
+}
